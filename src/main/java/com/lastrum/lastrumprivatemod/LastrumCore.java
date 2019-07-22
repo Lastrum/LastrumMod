@@ -13,6 +13,7 @@ import com.lastrum.lastrumprivatemod.Commands.Sites.*;
 import com.lastrum.lastrumprivatemod.Config.LastrumConfig;
 import com.lastrum.lastrumprivatemod.Keybinds.OpenConfigGui;
 import com.lastrum.lastrumprivatemod.Render.HudRenderer;
+import com.lastrum.lastrumprivatemod.Render.TabRenderer;
 import com.lastrum.lastrumprivatemod.Render.Util.HudProperty.HudPropertyApi;
 import com.lastrum.lastrumprivatemod.Util.codeshortcuts.m;
 import com.lastrum.lastrumprivatemod.Events.ChatClickEvent;
@@ -20,7 +21,6 @@ import com.orangemarshall.config.Config;
 import com.orangemarshall.config.ConfigApi;
 import net.minecraft.client.gui.GuiIngame;
 import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
@@ -46,7 +46,7 @@ public class LastrumCore {
     public void init(FMLInitializationEvent event){
         EventBus EventBus = MinecraftForge.EVENT_BUS;
         ClientCommandHandler CommandHandler = ClientCommandHandler.instance;
-        //GuiIngame ingameGUI = m.c.ingameGUI;
+        GuiIngame ingameGUI = m.c.ingameGUI;
         RenderManager renderManager = m.c.getRenderManager();
 
         //Events
@@ -62,6 +62,7 @@ public class LastrumCore {
         EventBus.register(new Booster());
         EventBus.register(new WeeklyQuests());
         EventBus.register(new HudRenderer());
+        EventBus.register(new TabRenderer(m.c,ingameGUI));
 
         //Commands
         CommandHandler.registerCommand(new Plancke());

@@ -20,5 +20,7 @@ public class CustomGuildChat {
                 Chat.put(l.c.customGuildMessage.get().replace("&","\u00a7") + "\u00a7f" + chatMsg.replace("&","\u00a7"));
             }
         }
+
+
     }
 }

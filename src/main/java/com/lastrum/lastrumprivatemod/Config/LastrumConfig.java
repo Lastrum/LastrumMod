@@ -16,7 +16,7 @@ public class LastrumConfig extends ConfigHolder {
     // #API
     public Value<String> userApiKey = Value.Builder.create("")
             .setCategory("API")
-            .setDisplayName("\u00a77Hypixel API Key")
+            .setDisplayName("Hypixel API Key")
             .setDescription("Your Hypixel API Key.\nRequired for all API related features in the mod.\nDo not share this with anyone.")
             .setShowInHud(true)
             .build();
@@ -24,42 +24,42 @@ public class LastrumConfig extends ConfigHolder {
     // #CHAT
     public Value<Boolean> betterBreak = Value.Builder.create(true)
             .setCategory("Chat")
-            .setDisplayName("\u00a77BetterBreak")
+            .setDisplayName("BetterBreak")
             .setDescription("Changes the breaklines in chat to better, smoother lines.\nEx:\n\u00a7a------\nbecomes vv\n\u00a7a\u00a7m------")
             .setShowInHud(true)
             .build();
 
     public Value<String> customOfficerMessage = Value.Builder.create("&4O >")
             .setCategory("Chat")
-            .setDisplayName("\u00a77Officer Chat Prefix")
+            .setDisplayName("Officer Chat Prefix")
             .setDescription("Custom prefix to replace the \u00a73Officer >\u00a7f chat prefix.\nColour codes are supported with & (Ex: \u00a7c&c\u00a7f)")
             .setShowInHud(true)
             .build();
 
     public Value<String> customGuildMessage = Value.Builder.create("&aG >")
             .setCategory("Chat")
-            .setDisplayName("\u00a77Guild Chat Prefix")
+            .setDisplayName("Guild Chat Prefix")
             .setDescription("Custom prefix to replace the \u00a72Guild >\u00a7f chat prefix.\nColour codes are supported with & (Ex: \u00a7c&c\u00a7f)")
             .setShowInHud(true)
             .build();
 
     public Value<String> customPartyMessage = Value.Builder.create("&9P >")
             .setCategory("Chat")
-            .setDisplayName("\u00a77Party Chat Prefix")
+            .setDisplayName("Party Chat Prefix")
             .setDescription("Custom prefix to replace the \u00a79Party >\u00a7f chat prefix.\nColour codes are supported with & (Ex: \u00a7c&c\u00a7f)")
             .setShowInHud(true)
             .build();
 
     public Value<String> customCoopMessage = Value.Builder.create("&6CO >")
             .setCategory("Chat")
-            .setDisplayName("\u00a77Co-op Chat Prefix")
+            .setDisplayName("Co-op Chat Prefix")
             .setDescription("Custom prefix to replace the \u00a7bCo-op >\u00a7f chat prefix in SkyBlock.\nColour codes are supported with & (Ex: \u00a7c&c\u00a7f)")
             .setShowInHud(true)
             .build();
 
     public Value<String> customNpcMessage = Value.Builder.create("&6[NPC] %s")
             .setCategory("Chat")
-            .setDisplayName("\u00a77NPC Chat Prefix \u00a7c[Broken]")
+            .setDisplayName("NPC Chat Prefix \u00a7c[Broken]")
             .setDescription("Custom prefix to replace the \u00a7e[NPC] John\u00a7f chat prefix in Skyblock and lobbies.\nColour codes are supported with & (Ex: \u00a7c&c\u00a7f)\n%s = NPC name.\nThis replaces everything before the ':'")
             .setShowInHud(true)
             .build();
@@ -88,29 +88,29 @@ public class LastrumConfig extends ConfigHolder {
 
     public Value<Boolean> broadcastAchievements = Value.Builder.create(true)
             .setCategory("Guild Announcements")
-            .setDisplayName("\u00a77Announce Achievements")
+            .setDisplayName("Announce Achievements")
             .setDescription("Announces in guild chat when you get an achievement.")
             .setShowInHud(true)
             .build();
 
     public Value<Boolean> broadcastLevels = Value.Builder.create(true)
             .setCategory("Guild Announcements")
-            .setDisplayName("\u00a77Announce Level Ups")
+            .setDisplayName("Announce Level Ups")
             .setDescription("Announces in guild chat when you level up.")
             .setShowInHud(true)
             .build();
 
     public Value<Boolean> broadcastBoosters = Value.Builder.create(true)
             .setCategory("Guild Announcements")
-            .setDisplayName("\u00a77Announce Boosters")
+            .setDisplayName("Announce Boosters")
             .setDescription("Announces in guild chat when you queue a booster.")
             .setShowInHud(true)
             .build();
 
     public Value<Boolean> broadcastWeeklyQuests = Value.Builder.create(true)
             .setCategory("Guild Announcements")
-            .setDisplayName("\u00a77Announce Weekly Quests")
-            .setDescription("Sends a message in guild chat when you complete a weekly quest\n[untested]")
+            .setDisplayName("Announce Weekly Quests")
+            .setDescription("Sends a message in guild chat when you complete a weekly quest")
             .setShowInHud(true)
             .build();
 
@@ -127,6 +127,20 @@ public class LastrumConfig extends ConfigHolder {
             .setCategory("Render")
             .setDisplayName("Rainbow HUD")
             .setDescription("Enables rainbow text in the HUD and Main Menu.")
+            .setShowInHud(true)
+            .build();
+
+    public Value<Boolean> colouredGuildTag = Value.Builder.create(true)
+            .setCategory("Render")
+            .setDisplayName("Coloured Guild Tag")
+            .setDescription("Makes Knights's guild tag to whatever colour you want (set below) instead of ugly yellow.")
+            .setShowInHud(true)
+            .build();
+
+    public Value<String> guildTagColour = Value.Builder.create("4")
+            .setCategory("Render")
+            .setDisplayName("Guild Tag Colour")
+            .setDescription("Colour code for the guild tag (one character only)")
             .setShowInHud(true)
             .build();
 
