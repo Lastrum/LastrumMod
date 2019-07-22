@@ -34,6 +34,8 @@ public class LastrumCore {
 
 
     public static Config config;
+    public static String startingAccountName = Reference.STOP;
+    public static String startingAccountId = Reference.STOP;
 
     public static KeyBinding openConfigKey;
 

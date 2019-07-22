@@ -85,6 +85,14 @@ processResources
     }
 }
 
+dependencies {
+    compile 'com.jagrosh:DiscordIPC:0.4'
+}
+
+repositories {
+    jcenter()
+}
+
 configurations {
     embed
     compile.extendsFrom(embed)

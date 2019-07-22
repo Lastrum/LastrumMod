@@ -116,8 +116,36 @@ public class LastrumConfig extends ConfigHolder {
     // #DISCORD
     public Value<Boolean> richPresence = Value.Builder.create(true)
             .setCategory("Discord")
-            .setDisplayName("\u00a77Rich Presence \u00a76[Coming Soon!]")
+            .setDisplayName("\u00a77Rich Presence")
             .setDescription("Toggles Discord RPC.")
+            .setShowInHud(true)
+            .build();
+
+    public Value<String> richPresenceDetails = Value.Builder.create("Minecraft 1.8.9")
+            .setCategory("Discord")
+            .setDisplayName("\u00a77Rich Presence Details")
+            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\nDetails line of Discord RPC.\n{player} = username")
+            .setShowInHud(true)
+            .build();
+
+    public Value<String> richPresenceState = Value.Builder.create("IGN: {player}")
+            .setCategory("Discord")
+            .setDisplayName("\u00a77Rich Presence State")
+            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\nState line of Discord RPC.\n{player} = username")
+            .setShowInHud(true)
+            .build();
+
+    public Value<String> richPresenceImage = Value.Builder.create("blood")
+            .setCategory("Discord")
+            .setDisplayName("\u00a77Rich Presence Image")
+            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\nLarge image of the Discord RPC. Allowed values:\nblood\nsk1er\nturtlesong\nvector\nfoundation\nlastrum")
+            .setShowInHud(true)
+            .build();
+
+    public Value<Boolean> badlionRichPresence = Value.Builder.create(false)
+            .setCategory("Discord")
+            .setDisplayName("\u00a77Spoof Badlion RPC")
+            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\u00a7c\u00a7lThis \u00a7c\u00a7lwill \u00a7c\u00a7loverride \u00a7c\u00a7lother \u00a7c\u00a7lRPC \u00a7c\u00a7lchoices\n\nSpoofs your RPC to that of Badlion Client's.")
             .setShowInHud(true)
             .build();
 
