@@ -44,7 +44,6 @@ public class LastrumCore {
         GuiIngame ingameGUI = m.c.ingameGUI;
         RenderManager renderManager = m.c.getRenderManager();
 
-
         //Events
         EventBus.register(new ChatClickEvent());
         EventBus.register(new CustomCoopChat());
