@@ -5,3 +5,4 @@ import net.minecraft.client.Minecraft;
 public class m {
     public static final Minecraft c = Minecraft.getMinecraft();
 }
+

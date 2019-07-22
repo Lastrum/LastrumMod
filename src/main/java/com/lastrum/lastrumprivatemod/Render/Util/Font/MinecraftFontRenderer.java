@@ -309,3 +309,4 @@ public final class MinecraftFontRenderer extends BasicFontRenderer {
         this.boldItalicFont.setFont(font.deriveFont(Font.BOLD | Font.ITALIC), antialias);
     }
 }
+

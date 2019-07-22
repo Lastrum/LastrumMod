@@ -97,6 +97,7 @@ public class LastrumCore {
         ClientRegistry.registerKeyBinding(openConfigKey);
     }
 
+
 }
 
 

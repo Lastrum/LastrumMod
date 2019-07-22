@@ -6,4 +6,5 @@ public class Reference {
     public static final String MODVERSION = "BETA 2.0";
 
     public static final String STOP = "Stop decrypting strings.";
+
 }

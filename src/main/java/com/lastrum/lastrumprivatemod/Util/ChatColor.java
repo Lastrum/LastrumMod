@@ -56,7 +56,6 @@ public enum ChatColor {
     public boolean isFormat() {
         return isFormat;
     }
-
     public boolean isColor() {
         return !isFormat && this != RESET;
     }

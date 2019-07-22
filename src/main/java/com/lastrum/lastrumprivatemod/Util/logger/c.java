@@ -5,3 +5,4 @@ public class c {
         System.out.println(log);
     }
 }
+

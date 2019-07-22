@@ -62,3 +62,4 @@ public class Chat {
         return ChatColor.stripColor(s);
     }
 }
+

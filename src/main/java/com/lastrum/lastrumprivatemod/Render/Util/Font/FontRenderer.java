@@ -22,3 +22,4 @@ public interface FontRenderer {
     FontData getFontData();
 
 }
+

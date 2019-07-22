@@ -5,3 +5,4 @@ import com.lastrum.lastrumprivatemod.Config.LastrumConfig;
 public class l {
     public static LastrumConfig c = LastrumConfig.getConfig;
 }
+

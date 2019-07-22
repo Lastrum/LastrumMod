@@ -16,6 +16,7 @@ public class DelayedTask {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+
     @SubscribeEvent
     public void onTick(TickEvent.ClientTickEvent event){
         if(event.phase != Phase.START)return;

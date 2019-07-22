@@ -22,3 +22,4 @@ public interface IConfigExchange {
     public abstract ScreenPosition load();
 
 }
+

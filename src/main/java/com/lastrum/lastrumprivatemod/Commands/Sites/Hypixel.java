@@ -59,3 +59,4 @@ public class Hypixel extends CommandBase {
         return true;
     }
 }
+
