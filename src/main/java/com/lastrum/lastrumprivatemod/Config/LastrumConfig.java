@@ -1,5 +1,6 @@
 package com.lastrum.lastrumprivatemod.Config;
 
+import com.lastrum.lastrumprivatemod.Render.Util.TempConfig;
 import com.orangemarshall.config.ConfigHolder;
 import com.orangemarshall.config.value.Value;
 
@@ -66,21 +67,21 @@ public class LastrumConfig extends ConfigHolder {
     // #ANNOUNCMENTS
     public Value<Boolean> visibleBroadcasts = Value.Builder.create(true)
             .setCategory("Guild Announcements")
-            .setDisplayName("\u00a77Guild Announcements")
+            .setDisplayName("Guild Announcements")
             .setDescription("If this is off you will not see any guild announcements")
             .setShowInHud(true)
             .build();
 
     public Value<Boolean> autoWelcomeNewPlayers = Value.Builder.create(false)
             .setCategory("Guild Announcements")
-            .setDisplayName("\u00a77Auto-Welcome New Players")
+            .setDisplayName("Auto-Welcome New Players")
             .setDescription("Sends a welcome message in guild chat when a player joins the guild.")
             .setShowInHud(true)
             .build();
 
     public Value<String> welcomeMessage = Value.Builder.create("Welcome to {Guild Name} %s")
             .setCategory("Guild Announcements")
-            .setDisplayName("\u00a77Welcome Message")
+            .setDisplayName("Welcome Message")
             .setDescription("If enabled, then message sent when a player joins the guild.\n%s = Player")
             .setShowInHud(true)
             .build();
@@ -113,40 +114,42 @@ public class LastrumConfig extends ConfigHolder {
             .setShowInHud(true)
             .build();
 
-    // #DISCORD
-    public Value<Boolean> richPresence = Value.Builder.create(true)
-            .setCategory("Discord")
-            .setDisplayName("\u00a77Rich Presence")
-            .setDescription("Toggles Discord RPC.")
+
+    // #RENDER
+    public Value<String> hudText = Value.Builder.create("&rLastrum&f &8%s")
+            .setCategory("Render")
+            .setDisplayName("HUD Text")
+            .setDescription("What the text in the top corner says.\nSupports colour codes.\nIf enabled, use &r for rainbow.\n%s = Current Mod Version")
             .setShowInHud(true)
             .build();
 
-    public Value<String> richPresenceDetails = Value.Builder.create("Minecraft 1.8.9")
-            .setCategory("Discord")
-            .setDisplayName("\u00a77Rich Presence Details")
-            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\nDetails line of Discord RPC.\n{player} = username")
+    public Value<Boolean> chromaHud = Value.Builder.create(true)
+            .setCategory("Render")
+            .setDisplayName("Rainbow HUD")
+            .setDescription("Enables rainbow text in the HUD and Main Menu.")
             .setShowInHud(true)
             .build();
 
-    public Value<String> richPresenceState = Value.Builder.create("IGN: {player}")
-            .setCategory("Discord")
-            .setDisplayName("\u00a77Rich Presence State")
-            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\nState line of Discord RPC.\n{player} = username")
-            .setShowInHud(true)
+    // #MISC
+    public Value<Double> watermarkX = Value.Builder.create(TempConfig.X_1)
+            .setCategory("x")
+            .setDisplayName("wmx")
+            .setDescription("")
+            .setShowInHud(false)
             .build();
 
-    public Value<String> richPresenceImage = Value.Builder.create("blood")
-            .setCategory("Discord")
-            .setDisplayName("\u00a77Rich Presence Image")
-            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\nLarge image of the Discord RPC. Allowed values:\nblood\nsk1er\nturtlesong\nvector\nfoundation\nlastrum")
-            .setShowInHud(true)
+    public Value<Double> watermarkY = Value.Builder.create(TempConfig.Y_1)
+            .setCategory("x")
+            .setDisplayName("wmy")
+            .setDescription("")
+            .setShowInHud(false)
             .build();
 
-    public Value<Boolean> badlionRichPresence = Value.Builder.create(false)
-            .setCategory("Discord")
-            .setDisplayName("\u00a77Spoof Badlion RPC")
-            .setDescription("\u00a7c\u00a7lRequires \u00a7c\u00a7lRich \u00a7c\u00a7lPresence\n\u00a7c\u00a7lThis \u00a7c\u00a7lwill \u00a7c\u00a7loverride \u00a7c\u00a7lother \u00a7c\u00a7lRPC \u00a7c\u00a7lchoices\n\nSpoofs your RPC to that of Badlion Client's.")
-            .setShowInHud(true)
+    // #SYSTEM
+    public Value<Boolean> framesPlusCompatbility = Value.Builder.create(false)
+            .setCategory("System")
+            .setDisplayName("Frames+ Compatibility")
+            .setDescription("Frames+ 2.0 conflicts with the Bloodlust Guild Mod. Please enable this feature if you are using Frames+.\nYou can ignore this if you are not :)")
+            .setShowInHud(false)
             .build();
-
 }

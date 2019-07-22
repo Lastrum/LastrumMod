@@ -12,12 +12,15 @@ import com.lastrum.lastrumprivatemod.Commands.PlayCommandTab;
 import com.lastrum.lastrumprivatemod.Commands.Sites.*;
 import com.lastrum.lastrumprivatemod.Config.LastrumConfig;
 import com.lastrum.lastrumprivatemod.Keybinds.OpenConfigGui;
+import com.lastrum.lastrumprivatemod.Render.HudRenderer;
+import com.lastrum.lastrumprivatemod.Render.Util.HudProperty.HudPropertyApi;
 import com.lastrum.lastrumprivatemod.Util.codeshortcuts.m;
 import com.lastrum.lastrumprivatemod.Events.ChatClickEvent;
 import com.orangemarshall.config.Config;
 import com.orangemarshall.config.ConfigApi;
 import net.minecraft.client.gui.GuiIngame;
 import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.client.renderer.texture.TextureManager;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
@@ -34,6 +37,8 @@ public class LastrumCore {
 
 
     public static Config config;
+    public static String startingAccountName = Reference.STOP;
+    public static String startingAccountId = Reference.STOP;
 
     public static KeyBinding openConfigKey;
 
@@ -56,7 +61,7 @@ public class LastrumCore {
         EventBus.register(new Level());
         EventBus.register(new Booster());
         EventBus.register(new WeeklyQuests());
-
+        EventBus.register(new HudRenderer());
 
         //Commands
         CommandHandler.registerCommand(new Plancke());
@@ -70,6 +75,12 @@ public class LastrumCore {
 
 
         //Resources
+
+
+        //API
+        HudPropertyApi api = HudPropertyApi.newInstance();
+        api.register(new HudRenderer());
+
 
         //KeyBinds
         openConfigKey = new KeyBinding("Open Config", Keyboard.KEY_GRAVE,"LastrumMod");

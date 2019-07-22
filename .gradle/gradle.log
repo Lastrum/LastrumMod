@@ -1,28 +1,8 @@
 This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.
 
-#################################################
-         ForgeGradle 2.1-SNAPSHOT-8d6480f        
-  https://github.com/MinecraftForge/ForgeGradle  
-#################################################
-               Powered by MCP unknown               
-             http://modcoderpack.com             
-         by: Searge, ProfMobius, Fesh0r,         
-         R4wk, ZeuX, IngisKahn, bspkrs           
-#################################################
 Version string '' does not match SemVer specification 
 You should try SemVer : http://semver.org/
-:help
-
-Welcome to Gradle 2.7.
-
-To run a build, run gradle <task> ...
-
-To see a list of available tasks, run gradle tasks
-
-To see a list of command-line options, run gradle --help
-
-To see more detail about a task, run gradle help --task <task>
 
 BUILD SUCCESSFUL
 
-Total time: 8.711 secs
+Total time: 4.983 secs

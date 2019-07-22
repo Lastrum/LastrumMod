@@ -1,5 +1,6 @@
 package com.lastrum.lastrumprivatemod.Config;
 
+import com.lastrum.lastrumprivatemod.Render.Util.TempConfig;
 import com.orangemarshall.config.ConfigHolder;
 import com.orangemarshall.config.value.Value;
 
@@ -113,12 +114,42 @@ public class LastrumConfig extends ConfigHolder {
             .setShowInHud(true)
             .build();
 
-    // #DISCORD
-    public Value<Boolean> richPresence = Value.Builder.create(true)
-            .setCategory("Discord")
-            .setDisplayName("\u00a77Rich Presence \u00a76[Coming Soon!]")
-            .setDescription("Toggles Discord RPC.")
+
+    // #RENDER
+    public Value<String> hudText = Value.Builder.create("&rLastrum&f &8%s")
+            .setCategory("Render")
+            .setDisplayName("HUD Text")
+            .setDescription("What the text in the top corner says.\nSupports colour codes.\nIf enabled, use &r for rainbow.\n%s = Current Mod Version")
             .setShowInHud(true)
             .build();
 
+    public Value<Boolean> chromaHud = Value.Builder.create(true)
+            .setCategory("Render")
+            .setDisplayName("Rainbow HUD")
+            .setDescription("Enables rainbow text in the HUD and Main Menu.")
+            .setShowInHud(true)
+            .build();
+
+    // #MISC
+    public Value<Double> watermarkX = Value.Builder.create(TempConfig.X_1)
+            .setCategory("x")
+            .setDisplayName("wmx")
+            .setDescription("")
+            .setShowInHud(false)
+            .build();
+
+    public Value<Double> watermarkY = Value.Builder.create(TempConfig.Y_1)
+            .setCategory("x")
+            .setDisplayName("wmy")
+            .setDescription("")
+            .setShowInHud(false)
+            .build();
+
+    // #SYSTEM
+    public Value<Boolean> framesPlusCompatbility = Value.Builder.create(false)
+            .setCategory("System")
+            .setDisplayName("Frames+ Compatibility")
+            .setDescription("Frames+ 2.0 conflicts with the Bloodlust Guild Mod. Please enable this feature if you are using Frames+.\nYou can ignore this if you are not :)")
+            .setShowInHud(true)
+            .build();
 }

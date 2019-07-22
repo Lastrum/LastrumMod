@@ -1,0 +1,130 @@
+[19:47:05] [Client thread/INFO]: Setting user: Player798
+[19:47:08] [Client thread/INFO]: LWJGL Version: 2.9.4
+[19:47:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LastrumMod
+[19:47:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:47:13] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[19:47:13] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:47:13] [Thread-9/INFO]: OpenAL initialized.
+[19:47:13] [Sound Library Loader/INFO]: Sound engine started
+[19:47:19] [Client thread/INFO]: Created: 16x16 textures-atlas
+[19:47:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LastrumMod
+[19:47:20] [Client thread/INFO]: SoundSystem shutting down...
+[19:47:20] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[19:47:20] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:47:20] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[19:47:20] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:47:20] [Thread-11/INFO]: OpenAL initialized.
+[19:47:21] [Sound Library Loader/INFO]: Sound engine started
+[19:47:25] [Client thread/INFO]: Created: 512x512 textures-atlas
+[19:47:31] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[19:47:31] [Server thread/INFO]: Generating keypair
+[19:47:31] [Server thread/INFO]: Preparing start region for level 0
+[19:47:32] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:47:33] [Server thread/INFO]: Player798[local:E:0a765ed3] logged in with entity id 53 at (1408.8950902539484, 4.0, -594.7345340971187)
+[19:47:33] [Server thread/INFO]: Player798 joined the game
+[19:47:35] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@6bdaee76[id=b91f0a72-af04-3f0f-855e-a1f30159432b,name=Player798,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.func_181037_M(Minecraft.java:2915) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:130) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
+[19:47:41] [Server thread/INFO]: Saving and pausing game...
+[19:47:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:47:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:47:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:01] [Server thread/INFO]: Saving and pausing game...
+[19:48:01] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:48:01] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:48:01] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:12] [Server thread/INFO]: Saving and pausing game...
+[19:48:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:48:12] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:48:12] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:30] [Server thread/INFO]: Saving and pausing game...
+[19:48:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:48:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:48:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:37] [Server thread/INFO]: Player798 has just earned the achievement [Taking Inventory]
+[19:48:37] [Client thread/INFO]: [CHAT] Player798 has just earned the achievement [Taking Inventory]
+[19:48:38] [Server thread/INFO]: Saving and pausing game...
+[19:48:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:48:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:48:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:49] [Server thread/INFO]: Saving and pausing game...
+[19:48:49] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:48:49] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:48:49] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:50] [Server thread/INFO]: Saving and pausing game...
+[19:48:50] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:48:50] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:48:50] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:54] [Server thread/INFO]: Stopping server
+[19:48:54] [Server thread/INFO]: Saving players
+[19:48:54] [Server thread/INFO]: Saving worlds
+[19:48:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[19:48:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[19:48:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[19:48:54] [Client thread/FATAL]: Reported exception thrown!
+net.minecraft.util.ReportedException: Rendering screen
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1183) ~[EntityRenderer.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1107) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:380) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:116) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NoClassDefFoundError: javafx/util/Pair
+	at com.orangemarshall.config.util.Polygon$Builder.addVertex(Polygon.java:52) ~[Polygon$Builder.class:?]
+	at com.orangemarshall.config.gui.element.BoolElement.drawCheckmark(BoolElement.java:42) ~[BoolElement.class:?]
+	at com.orangemarshall.config.gui.element.BoolElement.draw(BoolElement.java:34) ~[BoolElement.class:?]
+	at com.orangemarshall.config.gui.ConfigGui.drawScreen(ConfigGui.java:255) ~[ConfigGui.class:?]
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:310) ~[ForgeHooksClient.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1156) ~[EntityRenderer.class:?]
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: javafx.util.Pair
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_221]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_221]
+	at com.orangemarshall.config.util.Polygon$Builder.addVertex(Polygon.java:52) ~[Polygon$Builder.class:?]
+	at com.orangemarshall.config.gui.element.BoolElement.drawCheckmark(BoolElement.java:42) ~[BoolElement.class:?]
+	at com.orangemarshall.config.gui.element.BoolElement.draw(BoolElement.java:34) ~[BoolElement.class:?]
+	at com.orangemarshall.config.gui.ConfigGui.drawScreen(ConfigGui.java:255) ~[ConfigGui.class:?]
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:310) ~[ForgeHooksClient.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1156) ~[EntityRenderer.class:?]
+	... 15 more
+Caused by: java.lang.NullPointerException
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[launchwrapper-1.12.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_221]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_221]
+	at com.orangemarshall.config.util.Polygon$Builder.addVertex(Polygon.java:52) ~[Polygon$Builder.class:?]
+	at com.orangemarshall.config.gui.element.BoolElement.drawCheckmark(BoolElement.java:42) ~[BoolElement.class:?]
+	at com.orangemarshall.config.gui.element.BoolElement.draw(BoolElement.java:34) ~[BoolElement.class:?]
+	at com.orangemarshall.config.gui.ConfigGui.drawScreen(ConfigGui.java:255) ~[ConfigGui.class:?]
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:310) ~[ForgeHooksClient.class:?]
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1156) ~[EntityRenderer.class:?]
+	... 15 more
