@@ -1,0 +1,36 @@
+Symbol range map extraction starting
+Processing 34 files
+processing com\lastrum\lastrumprivatemod\Chat\Announcements\Achievements.java
+processing com\lastrum\lastrumprivatemod\Chat\Announcements\AutoWelcome.java
+processing com\lastrum\lastrumprivatemod\Chat\Announcements\Booster.java
+processing com\lastrum\lastrumprivatemod\Chat\Announcements\Level.java
+processing com\lastrum\lastrumprivatemod\Chat\Announcements\WeeklyQuests.java
+processing com\lastrum\lastrumprivatemod\Chat\BetterBreak.java
+processing com\lastrum\lastrumprivatemod\Chat\Prefixs\CustomCoopChat.java
+processing com\lastrum\lastrumprivatemod\Chat\Prefixs\CustomGuildChat.java
+processing com\lastrum\lastrumprivatemod\Chat\Prefixs\CustomNPCChat.java
+processing com\lastrum\lastrumprivatemod\Chat\Prefixs\CustomOfficerChat.java
+processing com\lastrum\lastrumprivatemod\Chat\Prefixs\CustomPartyChat.java
+processing com\lastrum\lastrumprivatemod\Commands\LastrumCommand.java
+processing com\lastrum\lastrumprivatemod\Commands\OpenConfig.java
+processing com\lastrum\lastrumprivatemod\Commands\PlayCommandTab.java
+processing com\lastrum\lastrumprivatemod\Commands\Sites\AllSites.java
+processing com\lastrum\lastrumprivatemod\Commands\Sites\Hypixel.java
+processing com\lastrum\lastrumprivatemod\Commands\Sites\Notifly.java
+processing com\lastrum\lastrumprivatemod\Commands\Sites\Plancke.java
+processing com\lastrum\lastrumprivatemod\Commands\Sites\Sk1er.java
+processing com\lastrum\lastrumprivatemod\Config\LastrumConfig.java
+processing com\lastrum\lastrumprivatemod\Discord\DiscordPresence.java
+processing com\lastrum\lastrumprivatemod\Discord\UpdateRP.java
+processing com\lastrum\lastrumprivatemod\Events\ChatClickEvent.java
+processing com\lastrum\lastrumprivatemod\Keybinds\OpenConfigGui.java
+processing com\lastrum\lastrumprivatemod\LastrumCore.java
+processing com\lastrum\lastrumprivatemod\Reference.java
+processing com\lastrum\lastrumprivatemod\Util\CC.java
+processing com\lastrum\lastrumprivatemod\Util\ChatColor.java
+processing com\lastrum\lastrumprivatemod\Util\DelayedTask.java
+processing com\lastrum\lastrumprivatemod\Util\codeshortcuts\Chat.java
+processing com\lastrum\lastrumprivatemod\Util\codeshortcuts\l.java
+processing com\lastrum\lastrumprivatemod\Util\codeshortcuts\m.java
+processing com\lastrum\lastrumprivatemod\Util\logger\c.java
+processing com\lastrum\lastrumprivatemod\Util\temp.java

@@ -41,7 +41,7 @@ public class LastrumCore {
     public void init(FMLInitializationEvent event){
         EventBus EventBus = MinecraftForge.EVENT_BUS;
         ClientCommandHandler CommandHandler = ClientCommandHandler.instance;
-        GuiIngame ingameGUI = m.c.ingameGUI;
+        //GuiIngame ingameGUI = m.c.ingameGUI;
         RenderManager renderManager = m.c.getRenderManager();
 
         //Events
