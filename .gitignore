@@ -1,0 +1,7 @@
+
+*.xml
+*.iml
+eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/MDKExample/.location
+*.tree
+*.prefs
+*.launch
