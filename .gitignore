@@ -4,3 +4,4 @@ eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/MDKExample/.loca
 *.tree
 *.prefs
 *.launch
+*.txt
